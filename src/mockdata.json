@@ -1,0 +1,30 @@
+{
+    "debt": [
+        {
+            "person": {
+                "id": "1",
+                "name": "Max"
+            },
+            "items": [
+                {
+                    "name": "coffee",
+                    "amount": 2
+                }
+            ],
+            "youAreOwing": true
+        },
+        {
+            "person": {
+                "id": "2",
+                "name": "Peter"
+            },
+            "items": [
+                {
+                    "name": "coffee",
+                    "amount": 1
+                }
+            ],
+            "youAreOwing": false
+        }
+    ]
+}
