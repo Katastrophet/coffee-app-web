@@ -4,6 +4,7 @@ import { Container, List } from "semantic-ui-react";
 import DebtList, { Debt } from "./DebtList";
 import "./home.css";
 import {default as data} from "../mockdata.json";
+import { Button } from "semantic-ui-react";
 
 const Home = () => {
 const debts: Debt[] = data.debt; 

@@ -24,7 +24,7 @@ type Props = {
 const DebtList = (props: Props): JSX.Element => {
   const {debts} = props;
   return (
-    <List>
+    <List divided relaxed>
       {debts.map((debt: Debt) => (
         <DebtListItem debt={debt} />
       ))}
