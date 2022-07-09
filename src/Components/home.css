@@ -5,6 +5,24 @@
     padding: 10px 40px;
     margin: 10px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+body{
+    background-image: url("../../public/Images/coffee.jpg");
+    padding: 10px 40px;
+}
+
+.ind-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+img {
+    max-width: 10vh;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 10px;
 }

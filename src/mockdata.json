@@ -3,11 +3,12 @@
         {
             "person": {
                 "id": "1",
-                "name": "Max"
+                "name": "Max",
+                "img": "max.jpg"
             },
             "items": [
                 {
-                    "name": "coffee",
+                    "name": "Kaffee",
                     "amount": 2
                 }
             ],
@@ -16,11 +17,26 @@
         {
             "person": {
                 "id": "2",
-                "name": "Peter"
+                "name": "Peter",
+                "img": "peter.jpg"
             },
             "items": [
                 {
-                    "name": "coffee",
+                    "name": "Kaffee",
+                    "amount": 1
+                }
+            ],
+            "youAreOwing": false
+        },
+        {
+            "person": {
+                "id": "2",
+                "name": "Mona",
+                "img": "mona.jpg"
+            },
+            "items": [
+                {
+                    "name": "Essen",
                     "amount": 1
                 }
             ],

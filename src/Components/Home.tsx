@@ -1,8 +1,13 @@
-import React, { FC } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Container, List } from "semantic-ui-react";
+import DebtList, { Debt } from "./DebtList";
 import "./home.css";
+import {default as data} from "../mockdata.json";
 
-const Home: FC = () => {
+const Home = () => {
+const debts: Debt[] = data.debt; 
+
   const navigate = useNavigate();
   const token = localStorage.getItem("auth");
   if (!token) {
@@ -20,8 +25,6 @@ const Home: FC = () => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            paddingLeft: 50,
-            paddingRight: 50,
           }}
         >
           <div>
@@ -33,13 +36,13 @@ const Home: FC = () => {
             </button>
           </div>
         </div>
-        <div className="container">
-          <div
-            className="row d-flex justify-content-center align-items-center text-center"
-            style={{ height: "100vh" }}
-          >
-            <p className="muted display-6">Hello User👋</p>
-          </div>
+        <div className="ind-container" style={{
+            display: "flex",
+            justifyContent: "space-between",
+            paddingLeft: 50,
+            paddingRight: 50,
+          }}>
+            <DebtList debts={debts}/>
         </div>
       </>
     );
